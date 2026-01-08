@@ -1,0 +1,9 @@
+pandas
+pyspark
+sqlalchemy
+psycopg2-binary
+apache-airflow
+minio
+pytest
+requests
+beautifulsoup4
