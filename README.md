@@ -161,7 +161,7 @@ docker-compose up -d
 
 **ABADOULAHI**
  Email: [abdoulahihamadououmarou@gmail.com](mailto:abdoulahihamadououmarou@gmail.com)
- Degree: Bachelor (L3) – Data ENGENEER
+ Specialiste – Data ENGENEER
  Location: Niger
 
 ---
