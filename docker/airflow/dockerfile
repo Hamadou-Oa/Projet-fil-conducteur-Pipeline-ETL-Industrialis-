@@ -1,0 +1,6 @@
+FROM apache/airflow:2.8.1-python3.10
+
+USER root
+RUN pip install pyspark pandas sqlalchemy minio pytest
+
+USER airflow

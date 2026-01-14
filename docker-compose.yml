@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_password
+      POSTGRES_DB: etl_db
+    ports:
+      - "5432:5432"
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+  spark:
+    build: docker/spark
+    depends_on:
+      - minio
+
+  airflow:
+    build: docker/airflow
+    depends_on:
+      - postgres
+      - spark
+      - minio
+    ports:
+      - "8080:8080"

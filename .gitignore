@@ -1,0 +1,8 @@
+__pycache__/
+.env
+venv/
+airflow/logs/
+airflow/plugins/
+*.log
+.idea/
+.vscode/

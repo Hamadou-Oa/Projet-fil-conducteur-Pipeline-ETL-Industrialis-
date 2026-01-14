@@ -1,0 +1,19 @@
+troduction et contexte
+
+    Objectifs du projet
+
+    Architecture du pipeline ETL (schéma)
+
+Description des sources de données
+
+    Extraction
+
+    Transformation avec Spark
+
+    Chargement dans MinIO
+
+    Orchestration avec Airflow
+
+Industrialisation avec Docker
+
+Conclusion
